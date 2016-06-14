@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfStudy", "WpfStudy\WpfStudy.csproj", "{301D01C2-9E98-4787-85AF-C5FFF94E61BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.WpfStudy", "WpfStudy\1.WpfStudy.csproj", "{301D01C2-9E98-4787-85AF-C5FFF94E61BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.XamlStudy", "2.XamlStudy\2.XamlStudy.csproj", "{C83E9FD4-78F2-4C32-B8D2-86AF96F69FDB}"
 EndProject

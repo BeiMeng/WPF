@@ -1,0 +1,34 @@
+﻿<Window x:Class="_2.XamlStudy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Eight Ball Answer" Height="350" Width="696">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>       
+        <TextBox Name="TxtQuestion" Margin="10,10,13,10" TextWrapping="Wrap" Grid.Row="0" xml:space="preserve" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontFamily="Verdana" FontSize="24" Foreground="{x:Static SystemColors.ActiveCaptionBrush}">            
+              [&lt;Place question here....  &gt;                 ]
+        </TextBox>
+         <Button Name="CmdAnswer" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,0,0,20" Width="127" Click="CmdAnswer_OnClick">
+             Ask the Eight Ball
+         </Button>
+        
+        <Button Name="UserOtherNamespace" Grid.Row="1" Width="127" Margin="10,0,0,20" Click="UserOtherNamespace_Click">使用其他命名空间中的类型例子</Button>
+        <Button Name="OnlyCode" Grid.Row="1" Width="107" Margin="250,0,0,20" Click="OnlyCode_Click">只使用代码显示</Button>
+        <Button Name="UseNotCompiledXaml" Grid.Row="1" Width="107" Margin="500,0,0,20" Click="UseNotCompiledXaml_Click">使用代码和未经编译的XAML</Button>
+        <TextBox Name="TxtAnswer" Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10,10,13,10" TextWrapping="Wrap" IsReadOnly="True" FontFamily="Verdana" FontSize="24" Foreground="Green">
+              [Answer will appear here.]
+        </TextBox>
+        <Grid.Background>
+            <LinearGradientBrush>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.00" Color="Red"/>
+                    <GradientStop Offset="0.50" Color="Indigo"/>
+                    <GradientStop Offset="1.00" Color="Violet"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </Grid.Background>
+    </Grid>
+</Window>
