@@ -1,0 +1,19 @@
+﻿<Window x:Class="_2.XamlStudy.UserOtherNamespaceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        Title="UserOtherNamespace" Height="300" Width="445">
+    <Grid>
+        <ListBox>
+            <ListBoxItem>
+                <sys:DateTime>10/13/2016 4:30 PM</sys:DateTime>
+            </ListBoxItem>
+            <ListBoxItem>
+                <sys:DateTime>10/18/2016 1:30 PM</sys:DateTime>
+            </ListBoxItem>
+            <ListBoxItem>
+                <sys:DateTime>10/15/2016 4:17 PM</sys:DateTime>
+            </ListBoxItem>
+        </ListBox>
+    </Grid>
+</Window>
