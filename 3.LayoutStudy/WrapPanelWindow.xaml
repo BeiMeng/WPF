@@ -1,0 +1,12 @@
+﻿<Window x:Class="_3.LayoutStudy.WrapPanelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WrapPanelWindow" Height="329" Width="447">
+    <WrapPanel Margin="3">
+        <Button VerticalAlignment="Top">Top Button</Button>
+        <Button MinHeight="60">Tall Button 2</Button>
+        <Button VerticalAlignment="Bottom" Content="Botton Button"></Button>
+        <Button>Stretch Buttopn</Button>
+        <Button VerticalAlignment="Center">Center Button</Button>
+    </WrapPanel>
+</Window>

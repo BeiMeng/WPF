@@ -24,5 +24,17 @@ namespace _3.LayoutStudy
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            StackPlanWindow stackPlan=new StackPlanWindow();
+            stackPlan.ShowDialog();
+        }
+
+        private void Wrap_Click(object sender, RoutedEventArgs e)
+        {
+            WrapPanelWindow wrapPanel=new WrapPanelWindow();
+            wrapPanel.ShowDialog();
+        }
     }
 }

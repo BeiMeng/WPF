@@ -1,0 +1,13 @@
+﻿<Window x:Class="_3.LayoutStudy.BasicDialogBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BasicDialogBox" Height="300" Width="300">
+    <DockPanel LastChildFill="True">
+         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Margin="1" Padding="3">OK</Button>
+            <Button Margin="1" Padding="3">Cancel</Button>
+        </StackPanel>
+        <TextBox DockPanel.Dock="Top">Please key value</TextBox>
+    </DockPanel>
+    <!--可以通过视图-其他窗口-文档大纲 查看这个tree结构-->
+</Window>
