@@ -12,26 +12,23 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfMVVMDemo.ViewModel;
 
-namespace WpfMVVMDemo
+namespace _8.ElementBinding
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
     /// </summary>
     public partial class MainWindow : Window
     {
-        private StudentViewModel _student;
         public MainWindow()
         {
             InitializeComponent();
-            this._student=new StudentViewModel{Name="张三",Sex ="男",Age=18};
-            this.DataContext = _student;
         }
 
-        private void BtnChangeName_Click(object sender, RoutedEventArgs e)
+        private void BtnFirstBindingDemo_Click(object sender, RoutedEventArgs e)
         {
-            _student.Name = "李四";
+            FirstBindingDemo firstBindingDemo=new FirstBindingDemo();
+            firstBindingDemo.ShowDialog();
         }
     }
 }

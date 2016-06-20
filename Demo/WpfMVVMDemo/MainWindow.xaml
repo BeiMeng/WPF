@@ -3,6 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+         <TextBox Text="{Binding Name,Mode=TwoWay}" Margin="0,0,0,244"></TextBox>
+        <Button x:Name="BtnChangeName" Content="Button" HorizontalAlignment="Left" Margin="173,136,0,0" VerticalAlignment="Top" Width="75" Click="BtnChangeName_Click"/>
+
     </Grid>
 </Window>

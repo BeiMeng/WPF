@@ -10,28 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfMVVMDemo.ViewModel;
 
-namespace WpfMVVMDemo
+namespace _8.ElementBinding
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    /// FirstBindingDemo.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class FirstBindingDemo : Window
     {
-        private StudentViewModel _student;
-        public MainWindow()
+        public FirstBindingDemo()
         {
             InitializeComponent();
-            this._student=new StudentViewModel{Name="张三",Sex ="男",Age=18};
-            this.DataContext = _student;
         }
 
-        private void BtnChangeName_Click(object sender, RoutedEventArgs e)
+        private void BtnSetFontSize_Click(object sender, RoutedEventArgs e)
         {
-            _student.Name = "李四";
+            LabSampleText.FontSize = 30;
         }
     }
 }

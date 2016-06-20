@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMvvmLightDemo", "Demo\Wp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMVVMDemo", "Demo\WpfMVVMDemo\WpfMVVMDemo.csproj", "{2B0E4F8F-96FF-4337-8A23-AC3E639C3650}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.ApplicationClass", "7.ApplicationClass\7.ApplicationClass.csproj", "{9EC81328-8D01-4B8B-B593-34A1922DB81A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.ElementBinding", "8.ElementBinding\8.ElementBinding.csproj", "{937A17F5-535F-48D5-918F-87EAF02D9455}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +63,14 @@ Global
 		{2B0E4F8F-96FF-4337-8A23-AC3E639C3650}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B0E4F8F-96FF-4337-8A23-AC3E639C3650}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B0E4F8F-96FF-4337-8A23-AC3E639C3650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EC81328-8D01-4B8B-B593-34A1922DB81A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EC81328-8D01-4B8B-B593-34A1922DB81A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EC81328-8D01-4B8B-B593-34A1922DB81A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EC81328-8D01-4B8B-B593-34A1922DB81A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{937A17F5-535F-48D5-918F-87EAF02D9455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{937A17F5-535F-48D5-918F-87EAF02D9455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{937A17F5-535F-48D5-918F-87EAF02D9455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{937A17F5-535F-48D5-918F-87EAF02D9455}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
