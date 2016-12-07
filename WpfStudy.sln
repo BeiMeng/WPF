@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.ApplicationClass", "7.App
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.ElementBinding", "8.ElementBinding\8.ElementBinding.csproj", "{937A17F5-535F-48D5-918F-87EAF02D9455}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMvvmLightTemplate", "WpfMvvmLightTemplate\WpfMvvmLightTemplate.csproj", "{8CB5419F-1912-4F13-B303-E105F6EA38FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMvvmLightDemo.Test", "WpfMvvmLightDemo.Test\WpfMvvmLightDemo.Test.csproj", "{9DB60370-3974-4A8F-AB4D-46C6685AC072}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +75,14 @@ Global
 		{937A17F5-535F-48D5-918F-87EAF02D9455}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{937A17F5-535F-48D5-918F-87EAF02D9455}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{937A17F5-535F-48D5-918F-87EAF02D9455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CB5419F-1912-4F13-B303-E105F6EA38FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB5419F-1912-4F13-B303-E105F6EA38FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB5419F-1912-4F13-B303-E105F6EA38FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB5419F-1912-4F13-B303-E105F6EA38FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DB60370-3974-4A8F-AB4D-46C6685AC072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB60370-3974-4A8F-AB4D-46C6685AC072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB60370-3974-4A8F-AB4D-46C6685AC072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB60370-3974-4A8F-AB4D-46C6685AC072}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,5 +90,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2EE4CE18-682A-4967-BBED-A86EBCC1264B} = {AB76A9E1-AD3E-4859-BD2D-F7EBBD02E97A}
 		{2B0E4F8F-96FF-4337-8A23-AC3E639C3650} = {AB76A9E1-AD3E-4859-BD2D-F7EBBD02E97A}
+		{8CB5419F-1912-4F13-B303-E105F6EA38FD} = {AB76A9E1-AD3E-4859-BD2D-F7EBBD02E97A}
+		{9DB60370-3974-4A8F-AB4D-46C6685AC072} = {AB76A9E1-AD3E-4859-BD2D-F7EBBD02E97A}
 	EndGlobalSection
 EndGlobal
