@@ -2,11 +2,23 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using WpfMVVMDemo.Model;
+using WpfXml;
 
 namespace WpfMVVMDemo.ViewModel
 {
     public class StudentViewModel:INotifyPropertyChanged
     {
+
+        public DelegateCommand BtnCmd { get; set; }
+        public StudentViewModel()
+        {
+            this.BtnCmd = new DelegateCommand();
+            this.BtnCmd.ExecuteCommand = new Action<object>((c) =>
+            {
+                this.Name = "王五";
+            });
+        }
+
         private string _name;
 
         public string Name

@@ -4,6 +4,54 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Button x:Name="BtnFirstBindingDemo" Content="Button" HorizontalAlignment="Left" Margin="21,24,0,0" VerticalAlignment="Top" Width="75" Click="BtnFirstBindingDemo_Click"/>
-
+       <Grid Margin="6">
+           <Grid.RowDefinitions>
+               <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+           <Grid.ColumnDefinitions>
+               <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="60"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+           <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="0" Grid.Column="0">
+               <Ellipse x:Name="ballR" Height="36" Width="36" Fill="Red" HorizontalAlignment="Left">
+                   <Ellipse.RenderTransform>
+                       <TranslateTransform x:Name="ttR"></TranslateTransform>
+                   </Ellipse.RenderTransform>
+               </Ellipse>
+           </Border>
+            <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="1" Grid.Column="0">
+                <Ellipse x:Name="ballG" Height="36" Width="36" Fill="Green" HorizontalAlignment="Left">
+                    <Ellipse.RenderTransform>
+                        <TranslateTransform x:Name="ttG"></TranslateTransform>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+            </Border>
+            <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="2" Grid.Column="0">
+                <Ellipse x:Name="ballB" Height="36" Width="36" Fill="Blue" HorizontalAlignment="Left">
+                    <Ellipse.RenderTransform>
+                        <TranslateTransform x:Name="ttB"></TranslateTransform>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+            </Border>
+           <Button Grid.Row="0" Grid.RowSpan="3" Grid.Column="1" Content="GO" Click="Button_Click">
+               <Button.Triggers>
+                    <EventTrigger RoutedEvent="Button.Click">
+                        <BeginStoryboard>
+                            <Storyboard Duration="0:0:0:6">
+                                  <DoubleAnimation Duration="0:0:0:6" To="400" Storyboard.TargetName="ttR" Storyboard.TargetProperty="X"></DoubleAnimation>
+                                <DoubleAnimationUsingKeyFrames Duration="0:0:0:6" Storyboard.TargetName="ttG" Storyboard.TargetProperty="X">
+                                    <SplineDoubleKeyFrame KeyTime="0:0:0:6" Value="400" KeySpline="1,0,0,1"></SplineDoubleKeyFrame>
+                                </DoubleAnimationUsingKeyFrames>
+                                <DoubleAnimationUsingKeyFrames Duration="0:0:0:6" Storyboard.TargetName="ttB" Storyboard.TargetProperty="X">
+                                    <SplineDoubleKeyFrame KeyTime="0:0:0:6" Value="400" KeySpline="1,0,0,1"></SplineDoubleKeyFrame>
+                                </DoubleAnimationUsingKeyFrames>                                
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+               </Button.Triggers>
+           </Button>
+        </Grid>
     </Grid>
 </Window>
