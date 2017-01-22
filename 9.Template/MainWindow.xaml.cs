@@ -23,5 +23,9 @@ namespace _9.Template
         {
             InitializeComponent();
         }
+        private void pieChart_SliceClick(object sender, Infragistics.Controls.Charts.SliceClickEventArgs e)
+        {
+            e.IsExploded = !e.IsExploded; // toggle slice explosion
+        }
     }
 }

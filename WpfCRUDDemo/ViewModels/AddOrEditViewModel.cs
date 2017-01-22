@@ -13,7 +13,7 @@ namespace WpfCRUDDemo.ViewModels
  public delegate void CloseViewHandler();
  public class AddOrEditViewModel :ViewModelBase
  {
-         //定义事件
+        //定义事件
         //public event CloseViewHandler CloseViewHandlerEvent;
         public event Action CloseViewHandlerEvent;
         private StudentEntity _currentStudentEntity;
